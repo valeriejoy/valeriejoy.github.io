@@ -1,21 +1,18 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<link href='http://fonts.googleapis.com/css?family=Gochi+Hand' rel='stylesheet' type='text/css'>
-	<style>
-		body {
-			background: #333;
-			color: #999;
-		}
-		h1 {
-			font-family: "Gochi Hand", cursive;
-			font-size: 8em;
-			text-align: center;
-			padding-top: 1em;
-		}
-	</style>
-</head>
-<body>
-<h1>coming soon</h1>
-</body>
-</html>
+---
+layout: default
+---
+
+<div class="posts">
+  {% for post in site.posts %}
+    <article class="post">
+
+      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+
+      <div class="entry">
+        {{ post.excerpt }}
+      </div>
+
+      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
+    </article>
+  {% endfor %}
+</div>

@@ -411,6 +411,11 @@ footer {
   -moz-justify-content: space-between;
   justify-content: space-between;
 }
+@media screen and (max-width: 640px) {
+  .resume .inner {
+    display: block;
+  }
+}
 
 .intro {
   color: #555;
@@ -435,6 +440,17 @@ footer {
   -moz-box-sizing: border-box;
   padding-right: 300px;
 }
+@media screen and (max-width: 640px) {
+  .intro {
+    font-size: 1em;
+  }
+  .intro .inner {
+    padding: 0 20px;
+  }
+  .intro small {
+    font-size: 80%;
+  }
+}
 
 .bio {
   color: #ccc;
@@ -449,6 +465,11 @@ footer {
 }
 .bio dd > small {
   color: #777;
+}
+@media screen and (max-width: 640px) {
+  .bio {
+    font-size: .8em;
+  }
 }
 
 .face {
@@ -465,6 +486,9 @@ footer {
   -moz-flex-direction: column;
   -webkit-flex-direction: column;
   flex-direction: column;
+  -moz-order: 2;
+  -webkit-order: 2;
+  order: 2;
   color: #777;
   font-size: 1.5em;
   text-align: right;
@@ -475,7 +499,7 @@ footer {
   border-radius: 5%;
   -moz-border-radius: 5%;
   -webkit-border-radius: 5%;
-  margin: -20px 0 10px;
+  margin: -70px 0 10px;
 }
 .face > div {
   display: -webkit-box;
@@ -496,6 +520,11 @@ footer {
 .face i {
   display: block;
   padding: 3px 0;
+}
+@media screen and (max-width: 640px) {
+  .face {
+    font-size: 1em;
+  }
 }
 
 .page404 #main {

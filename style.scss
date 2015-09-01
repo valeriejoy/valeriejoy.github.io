@@ -347,7 +347,11 @@ footer {
 
   .inner {
     @include display-flex();
-    @include justify-content(space-between)
+    @include justify-content(space-between);
+
+    @include mobile {
+      display: block;
+    }
   }
 }
 .intro {
@@ -375,6 +379,18 @@ footer {
     -moz-box-sizing: border-box;
     padding-right: 300px;
   }
+
+  @include mobile {
+    font-size: 1em;
+
+    .inner {
+      padding: 0 20px;
+    }
+
+    small {
+      font-size: 80%;
+    }
+  }
 }
 
 $greytext: #777;
@@ -395,6 +411,10 @@ $greytext: #777;
       color: $greytext;
     }
   }
+
+  @include mobile {
+    font-size: .8em;
+  }
 }
 
 .face {
@@ -402,6 +422,7 @@ $greytext: #777;
   @include display-flex();
   @include flex-basis(30%);
   @include flex-direction(column);
+  @include flex-order(2);
   
   color: $greytext;
   font-size: 1.5em;
@@ -413,7 +434,7 @@ $greytext: #777;
     border-radius: 5%;
     -moz-border-radius: 5%;
     -webkit-border-radius: 5%;
-    margin: -20px 0 10px;
+    margin: -70px 0 10px;
   }
 
   > div {
@@ -435,6 +456,10 @@ $greytext: #777;
   i {
     display: block;
     padding: 3px 0;
+  }
+
+  @include mobile {
+    font-size: 1em;
   }
 }
 

@@ -399,7 +399,7 @@ footer {
 
 .resume {
   background: #555;
-  padding-bottom: 30px;
+  padding-bottom: 50px;
 }
 .resume .inner {
   display: -webkit-box;
@@ -407,12 +407,15 @@ footer {
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
+  -webkit-justify-content: space-between;
+  -moz-justify-content: space-between;
+  justify-content: space-between;
 }
 
 .intro {
   color: #555;
   font-size: 1.5em;
-  padding: 20px 0 50px;
+  padding: 20px 0;
 }
 .intro small {
   color: #aaa;
@@ -446,29 +449,6 @@ footer {
 }
 .bio dd > small {
   color: #777;
-}
-
-.experience {
-  border-bottom: 1px solid #5f5f5f;
-  padding: 20px 0;
-}
-.experience:first-child {
-  padding-top: 5px;
-}
-.experience:last-child {
-  border-bottom: 0;
-  padding-bottom: 0;
-}
-.experience small {
-  display: block;
-  font-size: 60%;
-  opacity: .75;
-  padding: 2px 0 5px;
-}
-.experience ul li {
-  list-style: square;
-  margin-left: 50px;
-  opacity: .4;
 }
 
 .face {

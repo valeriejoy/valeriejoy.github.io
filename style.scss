@@ -343,16 +343,17 @@ footer {
 //--- about page
 .resume {
   background: $mgrey;
-  padding-bottom: 30px;
+  padding-bottom: 50px;
 
   .inner {
     @include display-flex();
+    @include justify-content(space-between)
   }
 }
 .intro {
   color: $mgrey;
   font-size: 1.5em;
-  padding: 20px 0 50px;
+  padding: 20px 0;
 
   small {
     color: #aaa;
@@ -393,31 +394,6 @@ $greytext: #777;
     > small {
       color: $greytext;
     }
-  }
-}
-
-.experience {
-  border-bottom: 1px solid #5f5f5f;
-  padding: 20px 0;
-  
-  &:first-child {
-    padding-top: 5px;
-  }
-  &:last-child {
-    border-bottom: 0;
-    padding-bottom: 0;
-  }
-  small {
-    display: block;
-    font-size: 60%;
-    opacity: .75;
-    padding: 2px 0 5px;
-  }
-
-  ul li {
-    list-style: square;
-    margin-left: 50px;
-    opacity: .4;
   }
 }
 

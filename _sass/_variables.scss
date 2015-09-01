@@ -3,21 +3,16 @@
 // VARIABLES
 //
 
-// Colors
-$blue: #4183C4;
+// colors
+$blue: #3fd3ff;
+$dgrey: #333;
+$mgrey: #555;
+$green: #7fcf49;
+$white: #f6f6f6;
 
-// Grays
-$black: #000;
-$darkerGray: #222;
-$darkGray: #333;
-$gray: #666;
-$lightGray: #eee;
-$white: #fff;
-
-// Font stacks
-$helvetica: Helvetica, Arial, sans-serif;
-$helveticaNeue: "Helvetica Neue", Helvetica, Arial, sans-serif;
-$georgia: Georgia, serif;
+// fonts
+$bold: Lora, serif;
+$regular: Questrial, sans-serif;
 
 // Mobile breakpoints
 @mixin mobile {

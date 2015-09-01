@@ -9,41 +9,31 @@
       <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
-    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
-    <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
-
-    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
+    <link href='https://fonts.googleapis.com/css?family=Lora:400,700|Questrial' rel='stylesheet' type='text/css'>
+    <link href='{{ site.baseurl }}/font-awesome/css/font-awesome.min.css' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />  
   </head>
 
-  <body>
-    <div class="wrapper-masthead">
-      <div class="container">
-        <header class="masthead clearfix">
-          <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" /></a>
-
-          <div class="site-info">
-            <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
-            <p class="site-description">{{ site.description }}</p>
-          </div>
-
-          <nav>
-            <a href="{{ site.baseurl }}/">Blog</a>
-            <a href="{{ site.baseurl }}/about">About</a>
-          </nav>
-        </header>
-      </div>
-    </div>
+  <body{% if page.bodyClass %} class="{{ page.bodyClass }}" {% endif %}>
+    <header {% if page.hasBanner %} class="fixed" {% endif %}><div class="inner">
+      <a href="{{ site.baseurl }}/" class="logo">valeriejoy<small>thirtyone</small></a>
+      {% include nav.html %}
+    </div></header>
 
     <div id="main" role="main" class="container">
       {{ content }}
     </div>
 
-    <div class="wrapper-footer">
-      <div class="container">
-        <footer class="footer">
-          {% include svg-icons.html %}
-        </footer>
-      </div>
+    {% if page.hidefooternav %}
+    {% else %}
+    <footer><div class="inner">
+      {% include nav.html %}
+    </div></footer>
+    {% endif %}
+
+    <div class="copyright">
+      <a href="{{ site.baseurl }}/" class="logo">valeriejoy<small>thirtyone</small></a>
+      <small>copyright2015</small>
     </div>
 
     {% include analytics.html %}

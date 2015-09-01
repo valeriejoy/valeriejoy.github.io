@@ -1,0 +1,89 @@
+---
+layout: default
+hidefooternav: true
+---
+
+	<div class="intro"><div class="inner">
+		<b>Hello, World!</b>
+		My name is Val. 
+		<small>Web Developer since 2007</small>
+
+		Most of the work I did in the past were private projects. But here's my resume: 
+	</div></div>
+
+	<div class="resume"><div class="inner">
+		<dl class="bio">
+			<dt>Name</dt>
+			<dd>Valerie Joy Insong</dd>
+
+			<dt>Profile</dt>
+			<dd>Web Developer</dd>
+
+			<dt>Education</dt>
+			<dd>
+				Bachelor of Science in Information Technology <br />
+				Mindanao Polytechnic State College <small>, Philippines</small><br />
+				Cum Laude, 2006<br />
+			</dd>
+
+			<dt>Skills</dt>
+			<dd>CSS, PHP, MySQL, Wordpress, HTML, Javascript</dd>
+
+			<dt>Experience and Volunteer Work</dt>
+			<dd>
+				<div class="experience">
+					Web Developer, JM
+					<small>2010-2013, 2014-present</small>
+					<ul>
+						<li>worked on various UI projects</li>
+					</ul>
+				</div>
+
+
+				<div class="experience">
+					Full-time missionary, the Church of Jesus Christ of Latter-day Saints
+					<small>2013-2014</small>
+					<ul>
+						<li>Nevada Reno Mission</li>
+					</ul>
+				</div>
+
+
+				<div class="experience">
+					Web Developer, Eversun Softwares Philippines Corporation
+					<small>2007-2010</small>
+					<ul>
+						<li>agent for FamilyLink. </li>
+						<li>worked on FamilyLink.com <span class="skill">(used Smarty: PHP Template Engine)</span></li>
+						<li>helped develop "We're Related" &mdash; FamilyLink's facebook application</li>
+						<li>developed "What I Love Most" (also a FB Application). It started out as a personal project and then FamilyLink bought it from me.</li>
+					</ul>
+				</div>
+		</dl>	
+		<div class="face">
+			<img src="{{ site.avatar }}" width="100" height="100" />
+			<span>"Never let the fear of striking out keep you from playing the game." - A Cinderella Story</span>
+			<div>
+				{% if site.footer-links.github %}
+					<a href="https://github.com/{{ site.footer-links.github }}" target="_blank">
+						<i class="fa fa-github" /></i>
+					</a>
+				{% endif %}
+				{% if site.footer-links.instagram %}
+					<a href="https://instagram.com/{{ site.footer-links.instagram }}" target="_blank">
+						<i class="fa fa-instagram" /></i>
+					</a>
+				{% endif %}
+				{% if site.footer-links.linkedin %}
+					<a href="https://www.linkedin.com/in/{{ site.footer-links.linkedin }}" target="_blank">
+						<i class="fa fa-linkedin" /></i>
+					</a>
+				{% endif %}
+				{% if site.footer-links.twitter %}
+					<a href="https://www.twitter.com/{{ site.footer-links.twitter }}" target="_blank">
+						<i class="fa fa-twitter" /></i>
+					</a>
+				{% endif %}
+			</div>
+		</div></div>
+	</div>

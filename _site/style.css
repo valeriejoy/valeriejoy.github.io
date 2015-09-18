@@ -72,7 +72,7 @@ a {
   margin: 0 auto;
   max-width: 1020px;
 }
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 1020px) {
   .inner {
     padding-left: 20px;
     padding-right: 20px;
@@ -140,7 +140,7 @@ header .inner {
   height: 500px;
   position: relative;
 }
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 1020px) {
   .banner {
     font-size: .75em;
   }
@@ -170,7 +170,7 @@ header .inner {
   font-size: 60%;
   line-height: 100%;
 }
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 1020px) {
   .banner h1 span {
     margin-top: 0;
   }
@@ -190,7 +190,7 @@ header .inner {
   -moz-justify-content: space-between;
   justify-content: space-between;
 }
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 1020px) {
   .promises .inner {
     display: block;
   }
@@ -207,7 +207,7 @@ header .inner {
   -webkit-flex-basis: 30%;
   flex-basis: 30%;
 }
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 1020px) {
   .promises li {
     border-top: 1px solid #ddd;
     padding: 20px 0;
@@ -224,7 +224,7 @@ header .inner {
   padding: 50px 0;
   text-align: center;
 }
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 1020px) {
   .recent {
     font-size: 1em;
   }
@@ -364,7 +364,7 @@ footer {
   padding: 5px 0 60px;
   text-align: center;
 }
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 1020px) {
   footer {
     padding: 10px 0;
   }
@@ -411,7 +411,7 @@ footer {
   -moz-justify-content: space-between;
   justify-content: space-between;
 }
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 1020px) {
   .resume .inner {
     display: block;
   }
@@ -440,7 +440,7 @@ footer {
   -moz-box-sizing: border-box;
   padding-right: 300px;
 }
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 1020px) {
   .intro {
     font-size: 1em;
   }
@@ -471,7 +471,7 @@ footer {
 .bio dd > small {
   color: #777;
 }
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 1020px) {
   .bio {
     font-size: .8em;
   }
@@ -526,7 +526,7 @@ footer {
   display: block;
   padding: 3px 0;
 }
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 1020px) {
   .face {
     font-size: 1em;
   }

@@ -84,7 +84,7 @@ header {
   padding: 10px 0;
 }
 header .nav a {
-  opacity: .5;
+  opacity: .75;
 }
 header.fixed {
   background: none;
@@ -426,7 +426,7 @@ footer {
   color: #aaa;
   display: block;
   font-size: 60%;
-  padding-bottom: 30px;
+  padding-bottom: 10px;
 }
 .intro b {
   display: block;
@@ -450,6 +450,11 @@ footer {
   .intro small {
     font-size: 80%;
   }
+}
+.intro p {
+  line-height: 120%;
+  padding-bottom: 10px;
+  text-indent: 2em;
 }
 
 .bio {
